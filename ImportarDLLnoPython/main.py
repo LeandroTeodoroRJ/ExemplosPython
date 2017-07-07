@@ -4,7 +4,7 @@
 '''
 Neste exemplo uma função dentro de uma dll compilada no Delphi XE6
 é chamada dentro do programa em Python.
-Python Ver: 3.5.3
+Python Ver: 3.5.3 64-bits
 '''
 #OBS: Para evitar erros, compilar a DLL na versão do Python que
 #está sendo utilizada: 32 ou 64-bits
