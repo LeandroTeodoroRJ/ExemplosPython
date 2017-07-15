@@ -4,9 +4,9 @@
 '''
 Objetivo: Rodar um processo paralelo por trás da caixa de mensagem. Note que sem o processo
 paralelo, só seria possível a impressão no console (linha 24) após o fechamento da caixa de mensagem
-(linha 21), já que o programma ficaria parado até isso cocorrer. Note também que o fluxo principal
-do programa (linha 29) só continua após o encerramento de todos os processos paralelos (linhas 27 e 28).
+(linha 21), já que o programma ficaria parado até isso cocorrer.
 '''
+
 
 #INCLUDES
 from tkinter import*
@@ -26,7 +26,7 @@ def tarefa_paralela2(texto):
 def clica_botao():
     _thread.start_new_thread(tarefa_paralela, ('mensagem 1',))
     _thread.start_new_thread(tarefa_paralela2, ('Tarefa paralela no console.',))
-    tkinter.messagebox.showinfo('TAREFA 3', 'Texto da caixa de mensagem 3')
+    print('Processo principal.')
 
 #GUI
 janela = Tk()
